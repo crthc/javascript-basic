@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+        console.log("Hello World");
+        alert("My name is Carlos");
+
+        const name = 'Carlos';
+        const lastName = 'Roth';
+        console.log(name + " " + lastName);
+
+        let num1 = 2;
+        let num2 = 4;
+        let sum = num1 + num2; 
+        console.log("The sum of" + ' ' + num1 + ' ' + "plus" + ' ' + num2 + ' ' + "is" + ' ' + sum);
+
+        let notaExamen = 7;
+        if (notaExamen >= 5) {
+            resultado = "You passed your exam! Your final result is" +" "+ notaExamen;
+        } else "You failed, your final result is" + " " + notaExamen;
+        alert(resultado);
+
+        let text = "tinc un cotxe de color verd";
+        console.log(text);
+        text = text.replace('verd', 'blau');
+        console.log(text);
+        text = text.replace(/o/g, 'u');
+        console.log(text);
+
+        let objetosStudio = ["taula", "cadira", "ordinador", "libreta"];
+        
+        objetosStudio.forEach(function(item, index){
+        console.log('El objeto '+ item + ' esta en la posición '+ index);
+        });
+
+        function calculadora(operador, valor1, valor2){
+            if (operador === 'resta'){
+                return valor1-valor2
+            } else if(operador==='suma'){
+                return valor1+valor2
+            } else if(operador==='multiplicación'){
+                return valor1*valor2
+            }
+        };
+        console.log(calculadora('resta', 40, 20));
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
